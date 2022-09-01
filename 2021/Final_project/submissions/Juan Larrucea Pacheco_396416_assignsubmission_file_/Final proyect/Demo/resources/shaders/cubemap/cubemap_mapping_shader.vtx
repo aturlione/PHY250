@@ -1,0 +1,15 @@
+#version 440
+
+layout (location=0) in vec3 pos;
+
+uniform mat4 V;
+uniform mat4 P;
+
+out vec3 local_pos;
+
+void main()
+{
+	local_pos = pos;
+	gl_Position = P * V *  vec4(pos,1.f);
+
+}

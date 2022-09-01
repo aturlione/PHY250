@@ -1,0 +1,172 @@
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in,headheight=3ex,headsep=3ex]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{array}
+
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify Course title, instructor name, semester here %%%%%%%%
+
+\title{Final Project}
+\author{PHY250 - Fall 2021}
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[sc]{mathpazo}
+%\linespread{1.05} % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+\usepackage[mmddyyyy]{datetime}% http://ctan.org/pkg/datetime
+\usepackage{advdate}% http://ctan.org/pkg/advdate
+
+\usepackage{setspace}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newdateformat{syldate}{\twodigit{\THEMONTH}/\twodigit{\THEDAY}}
+\newsavebox{\MONDAY}\savebox{\MONDAY}{Mon}% Mon
+\newcommand{\week}[1]{%
+%  \cleardate{mydate}% Clear date
+% \newdate{mydate}{\the\day}{\the\month}{\the\year}% Store date
+  \paragraph*{\kern-2ex\quad #1, \syldate{\today} - \AdvanceDate[4]\syldate{\today}:}% Set heading  \quad #1
+%  \setbox1=\hbox{\shortdayofweekname{\getdateday{mydate}}{\getdatemonth{mydate}}{\getdateyear{mydate}}}%
+  \ifdim\wd1=\wd\MONDAY
+    \AdvanceDate[7]
+  \else
+    \AdvanceDate[7]
+  \fi%
+}
+%\usepackage{setspace}
+\usepackage{multicol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr,lastpage}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{layout}
+
+\lhead{}
+\chead{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify header here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\rhead{\footnotesize Text in header}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\usepackage{array, xcolor}
+\usepackage{color,hyperref}
+\definecolor{clemsonorange}{HTML}{EA6A20}
+\hypersetup{colorlinks,breaklinks,linkcolor=clemsonorange,urlcolor=clemsonorange,anchorcolor=clemsonorange,citecolor=black}
+
+
+
+\begin{document}
+
+
+\maketitle
+
+\textcolor{red}{Deadline: 12/17/2021}
+
+\vspace{5mm}
+
+\begin{spacing}{0.3}
+    \noindent
+    \HRule\\
+    \HRule
+\end{spacing}
+\vspace{5mm}
+
+
+% First Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section*{Submission Instructions}
+
+You must submit a zip file to moodle containing:
+\vspace{3mm}
+
+\begin{itemize}
+\item The Octave codes.
+\item The animated video for the fluid.
+\item The sound files of exercise 2.
+\item Answer the questions using comments in your Octave codes.
+\end{itemize}
+
+\vspace{10mm}
+
+
+
+
+\newcounter{example}
+\setcounter{example}{1}
+
+\section*{ \theexample- Simulate  flow  passing a sphere}
+We are goin to consider  the case of the steady flow of an incompressible, non-viscous, circulation-free liquid passing an sphere of radius $a$ with initial velocity $v_0$.
+This is an artificial idealized situation valid for the case of a stretched sheet. Under this considerations, the solution of the Navier-Stokes equations is:\\
+\vspace{3mm}
+\\
+\begin{equation*}
+    \vec{v}=\nabla \bigg[-v_0*x\bigg(1+\frac{a^3}{2(x^2+y^2)^{3/2}}\bigg)\bigg]
+\end{equation*}
+\vspace{6mm}
+\\
+Re-use the code of Homework 2 to make a simulation for this fluid, considering  $a=0.4$ and $v_0=10$.
+
+\vspace{15mm}
+Questions:
+
+\vspace{3mm}
+
+\begin{enumerate}
+    \item What does "incompressible, non-viscous, circulation-free liquid" mean? 
+    \item What is the difference between this fluid and the one we considered when we solved problems during the course?
+    \item Do you think that the volume rate flow is just "$vA$" in this case? Why yes o why not?
+    \item How would you improve this model?
+\end{enumerate}
+% First Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\stepcounter{example}
+
+\section*{ \theexample-  Simulate the sound of different instruments}
+
+
+
+    \begin{enumerate}
+    \item  Download two different sound sources from  https://theremin.music.uiowa.edu/index.html, convert the files to .wav (you can do it in https://convertio.co/es/).
+    \vspace{3mm}
+    \item Plot the signal and the spectrum of the sources using Octave.
+    \vspace{3mm}
+     
+    \item Generate a new sound wave considering those frequencies, plot the signal and its spectrum (bars graph) overlapped with the original source plots.
+    \vspace{3mm}
+
+    
+    \item Compare your sounds with the sources. What are the differences between your signals and the sources?
+    
+    \vspace{3mm}
+    
+    \item How could you improve the quality of the digitalized sounds?
+
+    \end{enumerate}
+    
+
+
+
+
+
+
+\end{document}
+
+

@@ -1,0 +1,115 @@
+INFO|2021-07-16 17:35:55,231|pysph.solver.application|Running on aura with address 192.168.0.100
+INFO|2021-07-16 18:08:19,519|pysph.solver.application|Running on aura with address 192.168.0.100
+INFO|2021-07-16 18:08:19,521|pysph.solver.application|Generating output in E:\Digipen\PHY250\2021\Fluid_simulation\tests\test1_output
+INFO|2021-07-16 18:08:19,603|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 231
+  solid: 376
+----------------------------------------------------------------------
+INFO|2021-07-16 18:08:19,604|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2021-07-16 18:08:19,604|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2021-07-16 18:08:19,604|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(fluid=EulerStep(), solid=EulerStep())
+----------------------------------------------------------------------
+INFO|2021-07-16 18:08:19,605|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1000, gamma=7),
+TaitEOS(dest='solid', sources=None, rho0=1000, gamma=7)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid', 'solid']),
+ContinuityEquation(dest='solid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid', 'solid'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2021-07-16 18:08:19,656|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2021-07-16 18:08:19,656|pysph.solver.application|Setup took: 0.14403 secs
+INFO|2021-07-16 18:08:19,657|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 0.0002
+INFO|2021-07-16 18:09:14,471|pysph.solver.application|Running on aura with address 192.168.0.100
+INFO|2021-07-16 18:09:14,473|pysph.solver.application|Generating output in E:\Digipen\PHY250\2021\Fluid_simulation\tests\test1_output
+INFO|2021-07-16 18:09:14,591|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 231
+  solid: 376
+----------------------------------------------------------------------
+INFO|2021-07-16 18:09:14,601|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2021-07-16 18:09:14,601|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2021-07-16 18:09:14,601|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(fluid=EulerStep(), solid=EulerStep())
+----------------------------------------------------------------------
+INFO|2021-07-16 18:09:14,601|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1000, gamma=7),
+TaitEOS(dest='solid', sources=None, rho0=1000, gamma=7)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid', 'solid']),
+ContinuityEquation(dest='solid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid', 'solid'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2021-07-16 18:09:14,638|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2021-07-16 18:09:14,638|pysph.solver.application|Setup took: 0.17367 secs
+INFO|2021-07-16 18:09:14,649|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 0.0002
+INFO|2021-07-16 18:09:24,749|pysph.solver.application|Running on aura with address 192.168.0.100
+INFO|2021-07-16 18:09:24,752|pysph.solver.application|Generating output in E:\Digipen\PHY250\2021\Fluid_simulation\tests\test1_output
+INFO|2021-07-16 18:09:24,873|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 231
+  solid: 376
+----------------------------------------------------------------------
+INFO|2021-07-16 18:09:24,886|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2021-07-16 18:09:24,886|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2021-07-16 18:09:24,886|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  EulerIntegrator(fluid=EulerStep(), solid=EulerStep())
+----------------------------------------------------------------------
+INFO|2021-07-16 18:09:24,887|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1000, gamma=7),
+TaitEOS(dest='solid', sources=None, rho0=1000, gamma=7)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid', 'solid']),
+ContinuityEquation(dest='solid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid', 'solid'])
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2021-07-16 18:09:24,921|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2021-07-16 18:09:24,921|pysph.solver.application|Setup took: 0.17803 secs
+INFO|2021-07-16 18:09:24,929|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 0.0002

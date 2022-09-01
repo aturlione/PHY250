@@ -1,0 +1,8 @@
+\beamer@sectionintoc {2}{Wave Motion}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Energy transported by a wave}{50}{0}{1}
+\beamer@subsectionintoc {2}{2}{Mathematical description of a Wave}{71}{0}{1}
+\beamer@subsectionintoc {2}{3}{The Wave Equation}{92}{0}{1}
+\beamer@sectionintoc {3}{Superposition Principle}{113}{0}{2}
+\beamer@subsectionintoc {3}{1}{Interference}{125}{0}{2}
+\beamer@subsectionintoc {3}{2}{Reflection and transmission}{130}{0}{2}
+\beamer@subsectionintoc {3}{3}{Standing waves }{133}{0}{2}

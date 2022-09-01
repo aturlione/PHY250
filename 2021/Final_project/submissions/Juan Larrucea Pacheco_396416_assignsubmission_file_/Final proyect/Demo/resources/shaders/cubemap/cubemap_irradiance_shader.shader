@@ -1,0 +1,2 @@
+cubemap_irradiance_shader.vtx
+cubemap_irradiance_shader.frag

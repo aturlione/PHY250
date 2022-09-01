@@ -1,0 +1,387 @@
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in,headheight=3ex,headsep=3ex]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{array}
+
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify Course title, instructor name, semester here %%%%%%%%
+
+\title{PHYaa 250: Mechanics, Fluids, Waves and Light}
+\author{Fall 202}
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[sc]{mathpazo}
+%\linespread{1.05} % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+\usepackage[mmddyyyy]{datetime}% http://ctan.org/pkg/datetime
+\usepackage{advdate}% http://ctan.org/pkg/advdate
+\newdateformat{syldate}{\twodigit{\THEMONTH}/\twodigit{\THEDAY}}
+\newsavebox{\MONDAY}\savebox{\MONDAY}{Mon}% Mon
+\newcommand{\week}[1]{%
+%  \cleardate{mydate}% Clear date
+% \newdate{mydate}{\the\day}{\the\month}{\the\year}% Store date
+  \paragraph*{\kern-2ex\quad #1, \syldate{\today} - \AdvanceDate[4]\syldate{\today}:}% Set heading  \quad #1
+%  \setbox1=\hbox{\shortdayofweekname{\getdateday{mydate}}{\getdatemonth{mydate}}{\getdateyear{mydate}}}%
+  \ifdim\wd1=\wd\MONDAY
+    \AdvanceDate[7]
+  \else
+    \AdvanceDate[7]
+  \fi%
+}
+%\usepackage{setspace}
+\usepackage{multicol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr,lastpage}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{layout}
+
+\lhead{}
+\chead{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify header here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\rhead{\footnotesize Text in header}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\usepackage{array, xcolor}
+\usepackage{color,hyperref}
+\definecolor{clemsonorange}{HTML}{EA6A20}
+\hypersetup{colorlinks,breaklinks,linkcolor=clemsonorange,urlcolor=clemsonorange,anchorcolor=clemsonorange,citecolor=black}
+
+\begin{document}
+
+\maketitle
+
+%\blankline
+
+%\begin{tabular*}{.93\textwidth}{@{\extracolsep{\fill}}lr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify information %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%E-mail: \texttt{anabela.turlione@digipen.edu}  \\
+
+ %Office Hours: M 10-11:45am  &  Class Hours: T/Th 3-4:15pm \\
+
+ %Office: ... & Class Room: ... \\
+%% & \\
+%Lab Room: ... & Lab Hours: W 3-5pm \\
+%&  \\
+%\hline
+%\end{tabular*}
+
+%\begin{figure*}
+%\includegraphics[width=1.3\textwidth,angle=90]{Concept_map_315.pdf}
+%\end{figure*}
+
+
+\hrule
+
+
+
+% First Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{General Information }
+
+Class Schedule: Tuesday/Thursday 15:30 – 17:25 \\ 
+\\
+Class room: Ada Byron\\
+\\
+Professor: Anabela Turlione\\
+\\
+Contact: anabela.turlione@digipen.edu - int:1029\\
+\\
+Class web page: PHY250 at distance.digipen.edu\\
+\\
+Office hours: by appointment\\
+
+\section*{Prerequisites }
+ PHY200 Motion dynamics and MAT200 Calculus and Analytical Geometry II.\\
+\\
+It will be assumed that the student has knowledge in Kinematics, Newtonian Dynamics, work and the law of conservation of 
+energy.	
+It will also be assumed that the student has some basic knowledge in calculus of derivatives, 
+basic trigonometrical curves and operations, common geometrical relations, integral calculus and power series. 
+The students should revisit the above topics before entering in deeper physics.
+
+%\bigskip
+
+%\noindent New paragraph. Bla bla bla ...
+
+% Second Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Description}
+
+This calculus-based course provides a fundamental understanding of 
+clasical mechanics, fluid dynamics, oscillations, waves and optics. 
+Attention will be paid to numerical applications that are relevant to simulations.  
+
+
+%\begin{itemize}
+%\item Course notes available on Moodle. Books. Tech. Bla bla bla ...
+%\end{itemize}
+
+% Third Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Course Objectives and Learning Outcomes }
+Upon a successfully completion of this course the students will gain a fundamental understanding of :
+
+\begin{enumerate}
+\item System of particles, particle collision. Rigid bodies. Rotational Kinetics and dynamics.
+\item  Main characteristic of fluids which will allow them to solve buoyancy problems and describe laminar flow with and without viscosity.
+\item  The causes of the oscillations and its mathematical description. The students will be able to find the frequency of simple and physical pendula 
+as well as of an oscillating elastic body.
+\item  Creation and propagation of mechanical waves and its description through the wave equation.
+\item  Interferences between traveling waves, and their interferences templates. 
+\item  The phenomena of standing waves and resonance. The students will learn to find the nodes and the harmonic frequencies of resonance. 
+\item The sound and the common effects of its propagation, Doppler effect, beats, etc.
+\item  Ray model of light, the foundations of ray tracers and the dual nature of the light.
+
+\end{enumerate}
+
+% Fourth Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Textbooks}
+
+\begin{itemize}
+\item 
+Physics for Scientists and Engineers, Prentice Hall 4th Edition, by Giancoli 
+		Chapters:  13-16, 32-34, 17-20  
+		ISBN: 0 – 13 – 149508 – 9 
+\item Physics for Scientists and Engineers: Foundations and Connections with Modern Physics,
+		by Deborah M. Katz, Cengage Learning 2017.  
+		Chapters:  9, 15-22, 35-38. 
+		ISBN: 978-1-305-85698-1
+\end{itemize}
+
+\section*{Optional Textbooks}
+
+University Physics, Addison-Wesley 9th Edition, by Young/Freedman
+			ISBN: 0 – 201 – 57157 – 9 
+
+\section*{Relation with other subjects}
+
+PHY250 closes PHY300. 
+% Fifth Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Grading Policy}
+
+The breakdown of the weighting of the Total Score will be as follows:
+
+\begin{enumerate}
+\item  	Homeworks (30 $\%$)
+\item   Mid term (30$\%$)
+\item 	Final exam (40$\%$)
+
+\end{enumerate}
+
+The minimum grade to pass the subject is 60 \% 
+
+
+\section*{Mechanisms and Procedures}
+
+\begin{enumerate}
+\item Before the class: To optimize the learning experience and the efficient use of our time, reading the relevant book sections before the material is taught
+ is recommended. 
+\item Attendance:  attendance in class is mandatory. If you are absent for 2 weeks or more you are considered to have withdrawn from the course. If you decide to
+ drop the course it is your responsibility to follow the correct procedures.
+\item No food is allowed in class. I strongly recommend to take notes during the class.
+\item Working problems is essential in mastering the material. There will be approximately an assignment every two weeks.  At least, one of the assigments will be a 
+programming assignments. Programming assignments must be submitted to Moodle before the deadline.
+\item Late Policy: Late homework will not be accepted.
+\item  Please fell free to send me an email whenever you need help.
+\item A calculator is required for tests and homework. You can use any programming calculator without an Internet connection during any test or exam.
+\item All exams are closed book. As this course is about understanding and not memorization, one sheet of notes is permitted for an exam with the formulas you 
+consider. This sheet of notes must be handwritten by you, and no larger than a ‘normal’ (DIN4) piece of paper. Front and back of the page may be used.
+\item Missing a test without a timely, valid excuse will result in a 0 score for the test. There are NO make up exams unless you have a compelling and well 
+documented reason for missing a test. Notice that make ups are only considered under relevant medical, familiar or administrative situations that cannot be 
+postponed.
+\end{enumerate}
+
+\section*{Rubrics and Assessment}
+
+To get full credit you need to show all the important steps of your work which are:
+
+\begin{enumerate}
+\item Do a drawing of the schedule/body diagram in each problem.
+\item Indicate the law/theory applied (or your reasoning).
+\item Develop your calculus. The level of detail required is what your colleagues would need to see in order to understand your solution, without having to 
+work it out for themselves.
+\item Give the solution, specifying the unit of each magnitude and the direction of them (it's a vector). A penalty of 10% will be apply if the units are missing. 
+\end{enumerate}
+
+\begin{itemize}
+\item Before submitting an assignment your grade is a 0, not a 100. This means that you obtain points for doing things right, and I do not subtract points from 
+that non existing 100. 
+\item Partial credit will be given only if your work is clearly presented and mostly correct.
+\item If the process that you follow is correct but you arrive to a conclusion that is totally inconsistent with the theory learned in class, you will get a zero
+ in that exercises with the note “misconception” attached. 
+\item If an error is accumulative along an exercise, that will not penalize the rest of the exercise unless this means inconsistency with the theory learned in 
+class. 
+\item Any material covered in the course is valid for testing, including concepts covered in lecture, homework, or other communications and/or assigned work 
+(as reading the textbook).
+\item No messy tests/homework will be graded.
+\end{itemize}
+
+\section*{Relevance/Statement}
+
+It is important to keep up with the material, to study regularly at home (at least 2 hours for every hour in class) and to do as many problems as you can 
+(don’t limit yourself to the assigned or recommended problems, or merely the problems that are due).  
+
+	You are welcome to work with other students, so long as the aim is furthering your understanding of the concepts and problem solving techniques. I am 
+	happy to help work through problems, either in office hours or in class. Just remember, doing a problem yourself is very different from watching another 
+	person do so. If you work together on problem sets, be sure to provide your own solution to every problem proving that you understand your writing. 
+	In addition, some exam questions may be a resemblance to homework questions, so you’re encouraged to fully understand what you turn in. 
+	Again, reading the relevant book sections before the material is taught is highly recommended. 
+
+
+\subsection*{Last Day to Withdraw:    1st November}
+
+\vspace{5 mm}
+
+\section*{Academic Integrity Policy}
+
+Academic dishonesty in any form will not be tolerated in this course. Cheating, copying from any sources (including current or past students work, online sources 
+or books), plagiarizing, or any other form of academic dishonesty (including doing someone else’s individual assignments) will result in, at the extreme minimum,
+ a zero on the assignment in question, and could result in a failing grade in the course or even expulsion from DigiPen. Assisting others in cheating is prohibited 
+ and will be equally punished.
+
+\section*{Disability Support Services}
+
+If students have disabilities and will need formal accommodations in order to fully participate or effectively demonstrate learning in this class, they should 
+contact the Administration Office at 946365163. The Administration Office welcomes the opportunity to meet with students to discuss how the accommodations will
+ be implemented. Also, if you may need assistance in the event of an evacuation, please let the instructor know. 
+
+%\subsection*{Class Structure}
+
+%Bla bla bla ...
+
+%\bigskip
+
+%Bla bla bla ...
+
+%\subsection*{Assessments}
+
+%...
+
+%\subsubsection*{Lecture}
+%Bla bla ...
+
+%\subsubsection*{Lab}
+%...
+
+%\subsubsection*{Final Exam and Class Project}
+
+%Bla bla \textbf{Bla bla}.
+
+%\subsection*{Grading Policy}
+%The typical NC State grading scale will be used. I reserve the right to curve the scale dependent on overall class scores at the end of the semester. Any curve will only ever make it easier to obtain a certain letter grade. The grade will count the assessments using the following proportions:
+%\begin{itemize}
+%	\item \underline{\textbf{30\%}} of your grade will be determined by 2 in class midterm exams (15\% each).
+%	\item \underline{\textbf{5\%}} of your grade will be determined by ...
+%	\item \underline{\textbf{5\%}} ...
+%    \item \underline{\textbf{10\%}}  ...
+%	\item \underline{\textbf{15\%}} ...
+%	\item \underline{\textbf{15\%}} ...
+%\end{itemize}
+
+% Add a figure %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{figure*}
+%\includegraphics[width=1.3\textwidth,angle=90]{Concept_map_315.pdf}
+%\end{figure*}
+
+% Fifth Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newpage
+
+
+
+% Course Schedule %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Outline and Tentative Dates}
+
+
+\raggedright
+\begin{center}
+
+ \begin{tabular}{|c |l| l| l|} 
+
+
+ \hline
+Timeline & Topic & HW &\multicolumn{1}{p{3cm}|}{ Approximate book Section} \\ [0.5ex] 
+ \hline\hline
+ Week 1 &\multicolumn{1}{p{10cm}|}{ Conservation of Linear Momentum. Impulse and Collisions} &  &Ch 9  \\ 
+ \hline
+  Week 2 & \multicolumn{1}{p{10cm}|}{Center of Mass (CM). Translation of CM}   &HW 1 &Ch 9  \\
+ \hline
+ Week 3 & Rotational Kinematics. Torque and Rotational Dynamics & & Ch 10-11 \\
+ \hline
+ Week 4 & \multicolumn{1}{p{10cm}|}{Rigid Bodies and Inertia}  & HW 2 & Ch 11 \\
+ \hline
+
+ Week 5 & \multicolumn{1}{p{10cm}|}{ Rolling. Angular Momentum  Conservation of Angular Momentum } & & Ch 11  \\
+\hline
+
+ Week 6 & \multicolumn{1}{p{10cm}|}{  Static Equilibrium, Elasticity } &  HW 3& Ch 12  \\
+\hline
+
+ Week 7 &\multicolumn{1}{p{10cm}|}{ 
+Fluids mechanics: Density, Pressure and Pascal Principle,
+Buoyancy and Archimedes Principle} 
+ &  & Ch 13 \\ 
+
+ \hline
+ Week 8 &\multicolumn{1}{p{10cm}|}{ Flow, Equation of  Continuity, Bernoulli's equation
+Surface Tension, Viscosity, Poiseuille's equation, Drag forces \textbf{MIDTERM} }&  HW 4 &Ch 13  \\ 
+ \hline
+ Week 9 & \multicolumn{1}{p{10cm}|}{ Fluids
+Oscillations: SHM (Math equation, change of phase)}
+ & & Ch 14 \\ 
+ \hline
+ Week 10 &\multicolumn{1}{p{10cm}|}{ Energy of SHM, Potential Diagram. Simple Pendulum.  Physical Pendulum.
+Oscillations in 2D, DHM, Resonance} & HW 5 &Ch 14  \\ 
+ \hline
+ Week 11 &\multicolumn{1}{p{10cm}|}{ Waves: Wave Motion,  Mathematical Representation 
+Traveling Waves, Longitudinal and Transversal Waves}&  & Ch 15 \\ 
+ \hline
+ Week 12 &\multicolumn{1}{p{10cm}|}{ Energy on a Wave. Principle of Superposition.
+Interference, Standing Waves}  & HW 6 & Ch 15 \\ 
+ \hline
+ Week 13 & \multicolumn{1}{p{10cm}|}{Sources of sound: Resonance. 
+Sound I: Intensity (dB), Sound Level, Ear Response. Beats. Sound II: Doppler Effect, Shocks Waves.} &  & Ch 16 \\ 
+ \hline
+ Week 14 &\multicolumn{1}{p{10cm}|}{
+Light Reflection: Plane Mirror, Spherical Mirror. Light Refraction: Snell's Laws, spherical refraction.
+Thin lenses, ray tracing. Difraction. } &  HW 7  & Ch 16, Ch 32 \\ 
+ \hline
+
+ Week 15 & \textbf{FINAL EXAM}&  &  \\ 
+ \hline
+\end{tabular}
+
+\end{center}
+
+
+[This entire syllabus, particularly the time line, may be adjusted or changed at any time by the instructor.]
+
+\end{document}
+
+

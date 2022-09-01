@@ -1,0 +1,520 @@
+{
+    "GameObject0": {
+        "Component0": {
+            "component_name": "TransformComponent",
+            "transform_position": {
+                "x": 0.0,
+                "y": 10.0,
+                "z": 0.0
+            },
+            "transform_rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "transform_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            }
+        },
+        "Component1": {
+            "component_name": "LightReceiver",
+            "material": {
+                "renderable_ao": 1.0,
+                "renderable_metallic": 0.30000001192092896,
+                "renderable_roughness": 0.30000001192092896
+            },
+            "renderable_color": {
+                "a": 1.0,
+                "b": 0.0,
+                "g": 0.0,
+                "r": 0.5
+            },
+            "renderable_mesh": "Sphere.obj",
+            "textures": {
+                "ambient_oclussion_texture": "./resources/textures/scifi/scifi_ambient_oclussion.png",
+                "color_texture": "./resources/textures/scifi/scifi_diffuse.png",
+                "metallic_texture": "./resources/textures/scifi/scifi_metallic.png",
+                "normal_texture": "./resources/textures/scifi/scifi_normal.png",
+                "roughness_texture": "./resources/textures/scifi/scifi_roughness.png"
+            },
+            "use_textures": {
+                "use_ao_texture": true,
+                "use_color_texture": true,
+                "use_metallic_texture": true,
+                "use_normal_texture": true,
+                "use_roughness_texture": true,
+                "use_texture": true
+            }
+        },
+        "number_of_components": 2,
+        "object_name": "PBR Test Object"
+    },
+    "GameObject1": {
+        "Component0": {
+            "component_name": "TransformComponent",
+            "transform_position": {
+                "x": -10.0,
+                "y": 10.0,
+                "z": 10.0
+            },
+            "transform_rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "transform_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            }
+        },
+        "Component1": {
+            "component_name": "LightEmitter",
+            "light_ambient": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_attenuation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "light_diffuse": {
+                "x": 300.0,
+                "y": 300.0,
+                "z": 300.0
+            },
+            "light_direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "light_fallof": 0.0,
+            "light_inner_angle": 0.0,
+            "light_outter_angle": 0.0,
+            "light_specular": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_type": 0
+        },
+        "number_of_components": 2,
+        "object_name": "Light 1"
+    },
+    "GameObject2": {
+        "Component0": {
+            "component_name": "TransformComponent",
+            "transform_position": {
+                "x": 10.0,
+                "y": 10.0,
+                "z": 10.0
+            },
+            "transform_rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "transform_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            }
+        },
+        "Component1": {
+            "component_name": "LightEmitter",
+            "light_ambient": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_attenuation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "light_diffuse": {
+                "x": 300.0,
+                "y": 300.0,
+                "z": 300.0
+            },
+            "light_direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "light_fallof": 0.0,
+            "light_inner_angle": 0.0,
+            "light_outter_angle": 0.0,
+            "light_specular": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_type": 0
+        },
+        "number_of_components": 2,
+        "object_name": "Light 2"
+    },
+    "GameObject3": {
+        "Component0": {
+            "component_name": "TransformComponent",
+            "transform_position": {
+                "x": -10.0,
+                "y": -10.0,
+                "z": 10.0
+            },
+            "transform_rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "transform_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            }
+        },
+        "Component1": {
+            "component_name": "LightEmitter",
+            "light_ambient": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_attenuation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "light_diffuse": {
+                "x": 300.0,
+                "y": 300.0,
+                "z": 300.0
+            },
+            "light_direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "light_fallof": 0.0,
+            "light_inner_angle": 0.0,
+            "light_outter_angle": 0.0,
+            "light_specular": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_type": 0
+        },
+        "number_of_components": 2,
+        "object_name": "Light 3"
+    },
+    "GameObject4": {
+        "Component0": {
+            "component_name": "TransformComponent",
+            "transform_position": {
+                "x": 10.0,
+                "y": -10.0,
+                "z": 10.0
+            },
+            "transform_rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "transform_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            }
+        },
+        "Component1": {
+            "component_name": "LightEmitter",
+            "light_ambient": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_attenuation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "light_diffuse": {
+                "x": 300.0,
+                "y": 300.0,
+                "z": 300.0
+            },
+            "light_direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "light_fallof": 0.0,
+            "light_inner_angle": 0.0,
+            "light_outter_angle": 0.0,
+            "light_specular": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_type": 0
+        },
+        "number_of_components": 2,
+        "object_name": "Light 4"
+    },
+    "GameObject5": {
+        "Component0": {
+            "component_name": "TransformComponent",
+            "transform_position": {
+                "x": -10.0,
+                "y": 10.0,
+                "z": -10.0
+            },
+            "transform_rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "transform_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            }
+        },
+        "Component1": {
+            "component_name": "LightEmitter",
+            "light_ambient": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_attenuation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "light_diffuse": {
+                "x": 300.0,
+                "y": 300.0,
+                "z": 300.0
+            },
+            "light_direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "light_fallof": 0.0,
+            "light_inner_angle": 0.0,
+            "light_outter_angle": 0.0,
+            "light_specular": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_type": 0
+        },
+        "number_of_components": 2,
+        "object_name": "Light 5"
+    },
+    "GameObject6": {
+        "Component0": {
+            "component_name": "TransformComponent",
+            "transform_position": {
+                "x": 10.0,
+                "y": 10.0,
+                "z": -10.0
+            },
+            "transform_rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "transform_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            }
+        },
+        "Component1": {
+            "component_name": "LightEmitter",
+            "light_ambient": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_attenuation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "light_diffuse": {
+                "x": 300.0,
+                "y": 300.0,
+                "z": 300.0
+            },
+            "light_direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "light_fallof": 0.0,
+            "light_inner_angle": 0.0,
+            "light_outter_angle": 0.0,
+            "light_specular": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_type": 0
+        },
+        "number_of_components": 2,
+        "object_name": "Light 6"
+    },
+    "GameObject7": {
+        "Component0": {
+            "component_name": "TransformComponent",
+            "transform_position": {
+                "x": -10.0,
+                "y": -10.0,
+                "z": -10.0
+            },
+            "transform_rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "transform_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            }
+        },
+        "Component1": {
+            "component_name": "LightEmitter",
+            "light_ambient": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_attenuation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "light_diffuse": {
+                "x": 300.0,
+                "y": 300.0,
+                "z": 300.0
+            },
+            "light_direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "light_fallof": 0.0,
+            "light_inner_angle": 0.0,
+            "light_outter_angle": 0.0,
+            "light_specular": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_type": 0
+        },
+        "number_of_components": 2,
+        "object_name": "Light 7"
+    },
+    "GameObject8": {
+        "Component0": {
+            "component_name": "TransformComponent",
+            "transform_position": {
+                "x": 10.0,
+                "y": -10.0,
+                "z": -10.0
+            },
+            "transform_rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "transform_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            }
+        },
+        "Component1": {
+            "component_name": "LightEmitter",
+            "light_ambient": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_attenuation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "light_diffuse": {
+                "x": 300.0,
+                "y": 300.0,
+                "z": 300.0
+            },
+            "light_direction": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -1.0
+            },
+            "light_fallof": 0.0,
+            "light_inner_angle": 0.0,
+            "light_outter_angle": 0.0,
+            "light_specular": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "light_type": 0
+        },
+        "number_of_components": 2,
+        "object_name": "Light 8"
+    },
+    "GameObject9": {
+        "Component0": {
+            "component_name": "TransformComponent",
+            "transform_position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "transform_rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "transform_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            }
+        },
+        "Component1": {
+            "component_name": "EquirectangularSkybox",
+            "renderable_color": {
+                "a": 1.0,
+                "b": 1.0,
+                "g": 1.0,
+                "r": 1.0
+            },
+            "renderable_mesh": "Cube.obj",
+            "skybox_map": "./resources/equirectangulars/circus.hdr"
+        },
+        "number_of_components": 2,
+        "object_name": "Skybox"
+    },
+    "number_of_objects": 10
+}

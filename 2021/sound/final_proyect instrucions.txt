@@ -1,0 +1,66 @@
+Final Asigment:
+
+
+
+
+
+
+
+exercise 2: Waves
+
+
+digitalization of sounds
+
+Violin.
+
+Find the expresion for the armonics in a violin cord.
+
+play the Violin Audio, record the sound with wavesurfer, extract 
+the information for the nodes from the espectrum graph.
+
+using octave:
+
+graph the signal (relative amplitudes)
+generate a sound
+
+compare both sounds,
+
+where arise the main differences?
+how could you improve the quality of the digitalization?
+
+
+Clarinet
+
+Find the expression for the armonics in a clarinete
+
+play the Violin Audio, record the sound with wavesurfer, extract 
+the information for the nodes from the espectrum graph.
+
+using octave:
+
+graph the signal 
+generate a sound
+
+
+compare with the violin sound, what dirrefencies could you observe?
+
+which sound is more simmilar to the original? 
+whi do you think, the sound of (violin/clarinet) is more difficult to digitalize?
+
+
+
+
+E1:
+
+Solve a colistion between a particle and a sphere.
+
+Find the expresion for J and the final state of the system.
+
+plot the position of the twobodies for fifferent times in octave
+
+make an animation
+
+
+VIdeo violin: https://www.youtube.com/watch?v=j0FynYzQvcM
+Video Clarinet: https://www.youtube.com/watch?v=5Fi97H11KBc 4:39
+

@@ -1,0 +1,265 @@
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in,headheight=3ex,headsep=3ex]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{array}
+
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify Course title, instructor name, semester here %%%%%%%%
+
+\title{PHY 250: FINAL PROJECT}
+\author{Fall 2020}
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[sc]{mathpazo}
+%\linespread{1.05} % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+\usepackage[mmddyyyy]{datetime}% http://ctan.org/pkg/datetime
+\usepackage{advdate}% http://ctan.org/pkg/advdate
+\newdateformat{syldate}{\twodigit{\THEMONTH}/\twodigit{\THEDAY}}
+\newsavebox{\MONDAY}\savebox{\MONDAY}{Mon}% Mon
+\newcommand{\week}[1]{%
+%  \cleardate{mydate}% Clear date
+% \newdate{mydate}{\the\day}{\the\month}{\the\year}% Store date
+  \paragraph*{\kern-2ex\quad #1, \syldate{\today} - \AdvanceDate[4]\syldate{\today}:}% Set heading  \quad #1
+%  \setbox1=\hbox{\shortdayofweekname{\getdateday{mydate}}{\getdatemonth{mydate}}{\getdateyear{mydate}}}%
+  \ifdim\wd1=\wd\MONDAY
+    \AdvanceDate[7]
+  \else
+    \AdvanceDate[7]
+  \fi%
+}
+%\usepackage{setspace}
+\usepackage{multicol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr,lastpage}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{layout}
+
+\lhead{}
+\chead{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify header here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\rhead{\footnotesize Text in header}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\usepackage{array, xcolor}
+\usepackage{color,hyperref}
+\definecolor{clemsonorange}{HTML}{EA6A20}
+\hypersetup{colorlinks,breaklinks,linkcolor=clemsonorange,urlcolor=clemsonorange,anchorcolor=clemsonorange,citecolor=black}
+
+\begin{document}
+
+\maketitle
+
+%\blankline
+
+%\begin{tabular*}{.93\textwidth}{@{\extracolsep{\fill}}lr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify information %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%E-mail: \texttt{anabela.turlione@digipen.edu}  \\
+
+ %Office Hours: M 10-11:45am  &  Class Hours: T/Th 3-4:15pm \\
+
+ %Office: ... & Class Room: ... \\
+%% & \\
+%Lab Room: ... & Lab Hours: W 3-5pm \\
+%&  \\
+%\hline
+%\end{tabular*}
+
+%\begin{figure*}
+%\includegraphics[width=1.3\textwidth,angle=90]{Concept_map_315.pdf}
+%\end{figure*}
+
+\begin{center}
+Death-line: December  18th    
+\end{center}
+\hrule
+
+
+
+% First Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section*{Submition Instructions}
+
+The project must be done in LaTeX, libreoffice, Word, etc.
+\vspace{3mm}
+\\
+You must submit a zip file to moodle containing:
+\vspace{3mm}
+
+\begin{itemize}
+\item The Octave codes.
+\item The pdf file with the theory development.
+\item The animated videos for the collisions.
+\item The sound files of exercise 2.
+\end{itemize}
+
+\vspace{10mm}
+
+\section*{Exercise A}
+
+Solve a collision between an ellipse of mass $M$ and a particle of mass $m$. 
+Consider that the initial inclination of the elipse axis is $0^{\circ}$.
+
+
+\vspace{10mm}
+
+\begin{enumerate}
+\item Find tthe final velocity of the particle $\vec{V}'_1$,
+the center of mass of the elipse $\vec{V}'_{CM}$, and the angular velocity $\omega$ in term of 
+the initial velocities and the impulse $J$.
+\vspace{3mm}
+\item Use the deffinition of the restitution coefficient to find the Expresion of $J$ in therm 
+of the initial velocities.
+\vspace{3mm}
+\item Write a code in Octave to calculate the final velocities of a collision for  given initial
+conditions.
+\vspace{3mm}
+\item Plot the solution for different times and build and animation.
+\end{enumerate}
+
+\vspace{5mm}
+
+\textbf{Consider the following initial conditions:}
+
+\vspace{3mm}
+
+\begin{itemize}
+\item $\vec{v}_1=v_1\hat{\imath}$, $\vec{v}_{CM}=0$, $\omega=0$
+\item e=1, e=0
+\item  $M=2m$
+\end{itemize}
+
+\vspace{5mm}
+
+\textbf{You can structure your code as follows:}
+
+
+\begin{center}
+\begin{tabular}{ l  }
+\hline
+Geometry\\ 
+ \hline
+Define Space Mesh\\
+ Build the elipse\\
+ \hline
+ Set the IC for the elipse:\\
+  \hline
+
+ Mass\\
+ Inertia Moment\\
+  CM position\\
+ CM velocity$\rightarrow\vec{v}_{CM}=0$\\
+ Inclination $\rightarrow\theta_0=0$\\
+ \hline
+
+ Set the IC for the particle\\
+ \hline
+
+ mass\\
+  initial position\\
+ initial velocity\\
+ \hline
+
+ Set a value for the restitution coefficient\\
+  \hline
+
+ START TIME LOOP\\
+ \hline
+
+ motion of the particle at constant speed: $\vec{r}_p=\vec{r}_{p0}+\vec{V}_p\Delta t$\\
+  linear motion of the elipse: $\vec{r}_{CM}=\vec{r}_{CM}+\vec{V}_{CM}\Delta t$\\
+ rotation of the ellipse: $\theta=\theta_0+\omega\Delta t$\\
+ellipse translated and rotated\\
+ \hline
+
+ DEFINE THE COLLISION CONDITION\\
+  \hline
+
+ If the condition is true $\rightarrow$ find contact point\\
+  \hline
+
+ Find the normal at the contact point\\
+ Find the impulse\\
+ Find the final velocities\\
+ Find new positions\\
+  \hline
+
+\end{tabular}
+\end{center}
+
+\newpage
+\section*{Exercise B}
+
+\begin{enumerate}
+\item Sintetize the sound of a Violin and a Clarinet.
+
+\begin{itemize}
+\item  Record the sound with "wavesurfer"\footnote{ WaveSurfer is an open source tool for sound visualization and manipulation.  (\url{https://sourceforge.net/projects/wavesurfer/)
+}}  to obtain the spectrum \footnote{Clarinet sound: \url{https://www.youtube.com/watch?v=5Fi97H11KBc}, from 4:39 to 4:40}
+\footnote{Violin sound: \url{https://www.youtube.com/watch?v=j0FynYzQvcM}}. 
+\vspace{3mm}
+
+\item Extract the intensity corresponding to the first 16 harmonics and make a bars graph.
+\vspace{3mm}
+
+\item Find an expresion for the relative amplitude of the  harmonics $A/A_0$ (where $A_0$ is
+the amplitude of the first harmonic) in terms of the intensity.
+
+\item Consider that the amplitud of the fundamental frequency is $1$ and obtain the relative amplitudes for
+each one of the harmonics.
+ 
+\item Generate a sound wave for those frequencies using Octave.
+\vspace{3mm}
+
+\end{itemize}
+
+\item Plot the resultant wave for the violin, the clarinet and the fundamental frequency in 
+the same graph.
+
+\vspace{3mm}
+\item Compare the spectrum for the violin and the clarinet. which are the main differences?
+
+\vspace{3mm}
+
+\item Compare your sounds with the sources. What are the differences between your signals and thesources?
+
+\vspace{3mm}
+
+\item How could you improve the quality of the digitalized sounds?
+
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,19 @@
+#version 440
+
+layout (location=0) in vec3 pos;
+
+out vec3 local_pos;
+
+uniform mat4 V;
+uniform mat4 P;
+
+void main()
+{
+	mat4 view_no_pos = mat4(mat3(V));
+	local_pos = pos;
+	
+	vec4 without_trans = P * view_no_pos * vec4(local_pos,1.f);
+	
+	gl_Position = without_trans.xyww;
+
+}

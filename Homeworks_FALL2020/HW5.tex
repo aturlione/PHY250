@@ -1,0 +1,160 @@
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in,headheight=3ex,headsep=3ex]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{array}
+
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify Course title, instructor name, semester here %%%%%%%%
+
+\title{PHY 250: Homework 5}
+\author{Fall 2020}
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[sc]{mathpazo}
+%\linespread{1.05} % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+\usepackage[mmddyyyy]{datetime}% http://ctan.org/pkg/datetime
+\usepackage{advdate}% http://ctan.org/pkg/advdate
+\newdateformat{syldate}{\twodigit{\THEMONTH}/\twodigit{\THEDAY}}
+\newsavebox{\MONDAY}\savebox{\MONDAY}{Mon}% Mon
+\newcommand{\week}[1]{%
+%  \cleardate{mydate}% Clear date
+% \newdate{mydate}{\the\day}{\the\month}{\the\year}% Store date
+  \paragraph*{\kern-2ex\quad #1, \syldate{\today} - \AdvanceDate[4]\syldate{\today}:}% Set heading  \quad #1
+%  \setbox1=\hbox{\shortdayofweekname{\getdateday{mydate}}{\getdatemonth{mydate}}{\getdateyear{mydate}}}%
+  \ifdim\wd1=\wd\MONDAY
+    \AdvanceDate[7]
+  \else
+    \AdvanceDate[7]
+  \fi%
+}
+%\usepackage{setspace}
+\usepackage{multicol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr,lastpage}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{layout}
+
+\lhead{}
+\chead{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify header here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\rhead{\footnotesize Text in header}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\usepackage{array, xcolor}
+\usepackage{color,hyperref}
+\definecolor{clemsonorange}{HTML}{EA6A20}
+\hypersetup{colorlinks,breaklinks,linkcolor=clemsonorange,urlcolor=clemsonorange,anchorcolor=clemsonorange,citecolor=black}
+
+\begin{document}
+
+\maketitle
+
+%\blankline
+
+%\begin{tabular*}{.93\textwidth}{@{\extracolsep{\fill}}lr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify information %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%E-mail: \texttt{anabela.turlione@digipen.edu}  \\
+
+ %Office Hours: M 10-11:45am  &  Class Hours: T/Th 3-4:15pm \\
+
+ %Office: ... & Class Room: ... \\
+%% & \\
+%Lab Room: ... & Lab Hours: W 3-5pm \\
+%&  \\
+%\hline
+%\end{tabular*}
+
+%\begin{figure*}
+%\includegraphics[width=1.3\textwidth,angle=90]{Concept_map_315.pdf}
+%\end{figure*}
+
+\begin{center}
+Death-line: November  24th    
+\end{center}
+\hrule
+
+
+
+% First Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+\section*{Exercise 1}
+
+
+A guitar string is supposed to vibrate at $247 Hz$, but is measured
+to actually vibrate at $255 Hz$. By what percentage should the
+tension in the string be changed to get the frequency to the
+correct value?
+
+
+\section*{Exercise 2}
+
+Two strings on a musical instrument are tuned to play at
+$392~Hz$ (G) and $494~Hz$ (B). (a) What are the frequencies of
+the first two overtones for each string? (b) If the two strings
+have the same length and are under the same tension, what
+must be the ratio of their masses$ m_G/m_Al$ (c) If the
+strings, instead, have the same mass per unit length and are
+under the same tension, what is the ratio of their lengths
+$\ell_G/\ell_A$ (d) If their masses and lengths are the same, what
+must be the ratio of the tensions in the two strings?
+
+\section*{Exercise 3}
+
+Estimate the average power of a water wave when it hits the
+chest of an adult standing in the water at the seashore.
+Assume that the amplitude of the wave is $0.50 m$, the wavelength
+is $2.5 m$, and the period is $4.0 s$.
+
+
+\section*{Exercise 4}
+The displacement of a bell-shaped wave pulse is described
+by a relation that involves the exponential function:
+
+\begin{equation}
+D(x,t)=Ae^{-\alpha(x-vt)^2}
+\end{equation}
+
+where the constants $A=10.0$ m, $\alpha=2.0$ m$^{-2}$, and $v=3.0$ m/s. (a) Over the rage $-10.0 m \leq x \leq10.0 m$,
+ plot D{x, t) in Octave at each of the three times t = 0, t = 1.0, and t = 2.0 s. Do
+these three plots demonstrate the wave-pulse shape shifting
+along the $x$ axis by the expected amount over the span of
+each $1.0$~s interval? (b) Repeat part (a) but assume
+$D(x, t) = Ae^{-\alpha(x+vt)^2}$.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
