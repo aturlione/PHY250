@@ -1,0 +1,5 @@
+\beamer@sectionintoc {2}{Sound}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Characteristics}{9}{0}{1}
+\beamer@subsectionintoc {2}{2}{Mathematical Description}{14}{0}{1}
+\beamer@subsectionintoc {2}{3}{Sources of Sound}{56}{0}{1}
+\beamer@subsectionintoc {2}{4}{Quality of Sound, and Noise; Superposition}{80}{0}{1}

@@ -1,0 +1,5 @@
+\beamer@sectionintoc {2}{Electromagnetic waves}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{Electric Field}{10}{0}{1}
+\beamer@subsectionintoc {2}{3}{Magnetic Field}{64}{0}{1}
+\beamer@subsectionintoc {2}{4}{Electromagnetic Radiation}{81}{0}{1}

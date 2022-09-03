@@ -1,0 +1,3 @@
+\beamer@sectionintoc {2}{Waves in 2D}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Waves equation}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{Doppler Effect}{28}{0}{1}

@@ -1,0 +1,6 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {2}{Static Fluids}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{Pressure}{21}{0}{1}
+\beamer@subsectionintoc {2}{3}{Measurement of Pressure}{68}{0}{1}
+\beamer@subsectionintoc {2}{4}{Buoyancy}{74}{0}{1}

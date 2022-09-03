@@ -1,0 +1,3 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {2}{Oscillations}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{The Harmonic Oscillator}{3}{0}{1}
